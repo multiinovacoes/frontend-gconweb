@@ -1,74 +1,40 @@
 <ngx-ui-loader text="Inicializando..."></ngx-ui-loader>
-<!-- Toolbar -->
+<!-- Cabeçalho -->
 <div class="toolbar" role="banner">
-  <img
-    width="220"
-    alt="GCON"
-    height="80"
-    src="assets/image/2_12_logo.png"
-  />
+  <!-- Logo GCON -->
+  <img width="220" alt="GCON" height="80" src="assets/image/2_12_logo.png" />
   <span>Plataforma de Gestão e Conhecimento</span>
-    <div class="spacer"></div>
-    <img
-    width="220"
-    height="80"
-    [src]="imagemLogo"
-  />
+  <div class="spacer"></div>
+  <!-- Logo da Empresa -->
+  <img width="220" height="80" [src]="imagemLogo" />
 </div>
-<br><br>
+<br /><br />
 
+
+<!-- Conteúdo principal -->
 <div class="content" role="main">
-
   <div [hidden]="backendForaAr">
     <b><h3>O site está em manutenção, aguarde alguns minutos.</h3></b>
-</div>
+  </div>
 
   <div [hidden]="backendNoAr">
-  <div class="linha">
-    <p-divider></p-divider>
-    <div><h3>O que você quer Fazer?</h3></div>
-    <p-divider></p-divider>
-  </div>
-
-    <div class="p-fluid p-formgrid p-grid">
-        <div class="p-col-12 p-md-1 p-lg-6">
-          <a (click)="elogio()">
-          <p-card header="Elogio" [style]="{'margin-bottom': '2em', 'background-color':'#152CC7', 'color': 'white'}">
-            <p>Expresse que você está satisfeito com o atendimento ou serviço da Instituição</p>
-          </p-card>
-          </a>
-        </div>
-        <div class="p-col-12 p-md-1 p-lg-6">
-          <a (click)="reclamacao()">
-          <p-card header="Reclamação" [style]="{'margin-bottom': '2em', 'background-color':'Sienna', 'color': 'white'}">
-            <p>Manifeste sua insatisfação com o atendimento ou serviço prestado da Instiuição</p>
-          </p-card>
-          </a>
-          </div>
-          <div class="p-col-12 p-md-1 p-lg-6">
-            <a (click)="sugestao()">
-            <p-card header="Sugestão" [style]="{'margin-bottom': '2em', 'background-color':'DeepSkyBlue', 'color': 'white'}">
-              <p>Envie uma idéia de melhoria dos serviços prestado da Instituição</p>
-            </p-card>
-            </a>
-            </div>
-  
-        <div class="p-col-12 p-md-1 p-lg-6">
-          <a (click)="critica()">
-          <p-card header="Crítica" [style]="{'margin-bottom': '2em', 'background-color':'#65687B', 'color': 'white'}">
-            <p>Manifeste uma crítica com o atendimento ou serviço prestado da Instituição</p>
-          </p-card>
-          </a>
-          </div>
+    <div class="linha">
+      <p-divider></p-divider>
+      <div><h3>O que você quer Fazer???</h3></div>
+      <p-divider></p-divider>
     </div>
-      <div style="padding-bottom: 20px;">
-        <p-button label="Consulte sua Manifestação" (click)="consulta()" iconPos="right">
-        </p-button>
-        </div>
-    
+
+  
+      <div class="p-col-12 p-md-3">
+        <a href="#" class="btn-service elogio-btn" (click)="elogio()"
+           pTooltip="Expresse que você está satisfeito com o atendimento ou serviço da Instituição" >
+         <span >Elogio</span>
+        </a>
+      </div>
 
 
-  </div>
+</div>
+
 
   <p-dialog header="Lei Geral de Proteção de Dados" [(visible)]="displayModalLgpd" [modal]="true" [style]="{width: '50vw'}"
     [draggable]="false" [resizable]="false">
@@ -99,6 +65,22 @@
         <p-button icon="pi pi-check" (click)="sair()" label="Discordo" styleClass="p-button-text"></p-button>
         </ng-template>
 </p-dialog>
+
+<!-- Rodapé -->
+<footer>
+  <div class="footer-content">
+    <img class="footer-logo" alt="GCON" src="assets/image/2_56_logo_multi.png" />
+  </div>
+  <div class="footer-contact">
+    <p><i class="fa fa-envelope"></i> multi@multiinovacoes.com.br</p>
+    <p><i class="fa fa-phone"></i> (81) 99828-2637</p>
+  </div>
+  <div class="footer-credits">
+    © 2023 Multi inovações. CNPJ 20.737.194/0001-10. Todos os direitos reservados.
+  </div>
+</footer>
+
+
 
 
 

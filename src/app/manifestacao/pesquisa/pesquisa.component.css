@@ -100,3 +100,59 @@
 }
 
 
+/* Estilo personalizado para o botão de Elogio */
+.elogio-btn {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #d0d0d0;
+  color: #555;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+
+.elogio-btn span {
+  text-align: left; /* Alinhar o texto à esquerda */
+  flex: 1; /* Faz o texto ocupar o espaço disponível à direita do ícone */
+}
+
+/* Estilo para o rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Ajuste a altura do rodapé conforme necessário */
+  background-color: #1976d2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para a logo no rodapé */
+.footer-logo {
+  width: 220px; /* Ajuste o tamanho da logo conforme necessário */
+  height: 80px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+/* Estilo para o texto de contato no rodapé */
+.footer-contact p {
+  margin: 5px 0;
+}
+
+/* Estilo para o texto de créditos no rodapé */
+.footer-credits {
+  margin-top: 20px;
+}
+
+
+
+
