@@ -44,6 +44,7 @@ import { DenunciaUbecComponent } from './manifestacao/denuncia-ubec/denuncia-ube
 import { PerguntasFrequentesComponent } from './perguntas-frequentes/perguntas-frequentes.component';
 import { DenunciaComponent } from './manifestacao/denuncia/denuncia.component';
 import { DenunciaDiversasComponent } from './manifestacao/denuncia-diversas/denuncia-diversas.component';
+import { TooltipModule } from 'primeng/tooltip';
 
 
 
@@ -103,7 +104,8 @@ import { DenunciaDiversasComponent } from './manifestacao/denuncia-diversas/denu
     AccordionModule,
     ToastModule,
     EditorModule,
-    CheckboxModule
+    CheckboxModule,
+    TooltipModule
 
   ],
   providers: [
